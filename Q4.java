@@ -29,7 +29,7 @@ public class Q4 {
         Box<String>str2=str1;
         System.out.println("Str1 contains: "+str1.get());
         System.out.println("Str2 contains: "+str2.get());
-        str1.set("Sumo");
+        str1.set("It is new string");
         System.out.println("String box contains: "+str1.get());
         System.out.println("String box2 contains: "+str2.get());
 
