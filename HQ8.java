@@ -8,7 +8,18 @@ Write a recursive program using Java for solving the Towers of Hanoi puzzle for 
 */
 
 public class HQ8 {
+    public static void towerOfHanoi(int n, String src, String helper, String dest){
+        if (n==1){
+            System.out.println("Moving "+n+" from "+src+" to "+ dest);
+            return;
+        }
+        towerOfHanoi(n-1,src,dest,helper);
+        System.out.println("Moving "+n+" from "+src+" to "+ dest);
+        towerOfHanoi(n-1,helper,src,dest);
+    }
+    
     public static void main(String[] args) {
-        //soon
+        int n=3;
+        towerOfHanoi(n,"S","H","D");
     }
 }
